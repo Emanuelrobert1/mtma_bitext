@@ -17,11 +17,4 @@ for line in sys.stdin:
     n = int(n)
     if domain != d:
         for l in buf:
-            sys.stdout.write("%s %s %d\n" % (domain, l, buf[l]))
-        buf = defaultdict(int)
-        domain = d
-    buf[lang] += n
-
-
-for l in buf:
-    sys.stdout.write("%s %s %d\n" % (domain, l, buf[l]))
+            sys.stdout.write("%s %s %d\n" 
